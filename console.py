@@ -94,7 +94,7 @@ class HBNBCommand(cmd.Cmd):
         if search_key in result:
             print(result[search_key])
         else:
-            print(f"** no instance found **")
+            print("** no instance found **")
 
     def do_destroy(self, line):
         """Deletes an instance based on the class name and
@@ -126,7 +126,7 @@ class HBNBCommand(cmd.Cmd):
             del result[search_key]
             db.save()
         else:
-            print(f"** no instance found **")
+            print("** no instance found **")
 
     def do_all(self, line):
         """Deletes an instance based on the class name and
